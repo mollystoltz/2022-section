@@ -15,7 +15,18 @@ date get_date(void);
 
 int main(void)
 {
-    // TODO
+    date dates[3]; //always specify the size with arrays
+    //assigning dates
+    for (int i = 0; i < 3; i++)
+    {
+        dates[i] = get_date();
+    }
+    
+    //printing out dates
+    for (int i = 0; i < 3; i++)
+    {
+        print_date(dates[i]);
+    }
 }
 
 
